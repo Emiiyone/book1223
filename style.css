@@ -1,0 +1,314 @@
+
+body {
+    font-size: 16px;
+    font-family: Ubuntu, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+body#main {
+    margin-bottom: 100px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wrapper {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.logoWrap {
+    margin: 120px auto 24px;
+    position: relative;
+    width: 300px;
+  }
+  .logoWrap.selectPage {
+    margin: 20px auto;
+    position: relative;
+    width: 180px;
+  }
+.logoWrap.small {
+    margin: 30px auto;
+  }
+
+h1.logo {
+    width: 272px;
+    margin: auto;
+}
+.logoWrap.selectPage h1.logo {
+    width: 180px;
+}
+h1.logo img {
+    width: 100%;
+}
+
+h2.cat {
+    position: absolute;
+    font-size: 16px;
+    right: 16px;
+    top: 55px;
+    color: #4285f4; 
+}
+.logoWrap.selectPage h2.cat {
+    font-size: 11px;
+    right: 0;
+    left: 143px;
+    top: 37px;
+}
+
+.serch {
+    display: table;
+    width: 700px;
+    margin: auto;
+}
+
+.buttonWrap {
+  display: table-cell;
+  margin-left: 12px;
+  border: 1px solid #3079ed;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 30px;
+  width: 72px;
+  background-color: #357ae8;
+  background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+  vertical-align: middle;
+}
+.buttonWrap #send {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAtUlEQVQoz2P4//8/AxQbAvFBIP7yHwJA9BGoOAM2DGNkAPHv/9jBb6g8Vs0gk39BFd4G4hggloPSt6Hiv7C5AETshyq4i8N5d6Hy+7Fp/gqVDMChOQAq/xWb5r9QSUkcmiWh8n/x2eyDQ7MPPpsPEunng9g0myJFEyh0I4BYBErfRoqyXHLiGRmsxqYZ5gJQivoGVfgNyi/BZQADrqSHhtdhM4BYzVgNIEUzugHrSNUMMwCEGQDxZPLNLQuzXAAAAABJRU5ErkJggg==) no-repeat center center;
+  height: 30px;
+  vertical-align: top;
+  color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.serch input {
+    width: 600px;
+    height: 32px;
+    margin: auto;
+    padding: 2px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.myPage {
+    margin-top: 20px;
+}
+.myPage a {
+    color: #4285f4;
+}
+
+.bookList {
+    margin: 80px auto 40px;
+    width: 900px;
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 900px;
+  }
+  
+  table tr:last-child{
+    border-bottom:solid 1px #ddd;
+  }
+  
+  table td{
+    text-align: left;
+    padding: 15px;
+    border-right:solid 1px #ddd;
+    border-left:solid 1px #ddd;
+    border-bottom:solid 1px #ddd;
+  }
+  table td:nth-child(1) a{
+    color: #4285f4;
+  }
+  table td:nth-child(2) {
+    font-size: 14px;
+  }
+
+  table tr td:nth-child(3), table tr td:nth-child(4){
+    text-align: center;
+  }
+
+  table tr.ttl {
+    height: 60px;
+    color: #fff;
+    padding: 0;
+  }
+  table tr.ttl td{
+    text-align: center;
+  }
+  table tr.ttl td:nth-child(1){
+    background-color: #4285f4;
+    width: 400px;
+  }
+  table tr.ttl td:nth-child(2){
+    background-color: #ea4335;
+    width: 260px;
+  }
+  table tr.ttl td:nth-child(3){
+    background-color: #fbbc05;
+    width: 160px;
+  }
+  table tr.ttl td:nth-child(4){
+    background-color: #34a853;
+  }
+  
+/*------ チェックボックス -----*/ 
+.myCheckbox {
+    display: none;
+  }
+.myCheckbox-fontas {
+    position: relative;
+    vertical-align: middle;
+  }
+.myCheckbox + .checkbox-fontas:before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    color: #ccc;
+    font-size: 22px;
+  }
+.myCheckbox:checked + .checkbox-fontas:before {
+    color: #34a853;
+  }
+
+#submitFormButton, #getCheckedValuesButton,
+.remove-book, .deleteBtn, .upBtn, .submitUpdate, .close {
+  margin: 30px;
+  border: 1px solid #3079ed;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 50px;
+  width: 200px;
+  background-color: #357ae8;
+  background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+  color: #fff;
+  font-size: 14px;
+}
+.remove-book {
+    width: 50px;
+    height: 40px;
+    font-size: 13px;
+}
+
+.deleteBtn, .upBtn {
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0 10px 0 0;
+    text-align: center;
+}
+
+.submitUpdate, .close {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0 10px 0 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.deleteBtn a, .upBtn a {
+    color: #fff;
+    margin: 0;
+    text-decoration: none;
+}
+.deleteBtn a:hover, .upBtn a:hover {
+    text-decoration: none;
+}
+
+.wrapper .jumbotron {
+    padding: 30px 15px;
+    color: inherit;
+    background-color: #f8f8f8;
+    margin: auto 0;
+}
+
+.book-entry {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 700px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: left;
+}
+.book-entry .infoTxt {
+    width: 400px;
+    padding-right: 10px;
+}
+.book-entry .infoImg {
+    width: 200px;
+}
+
+p.shosekimei {
+    font-size: 15px;
+}
+p.chosha {
+    font-size: 14px;
+}
+.shosekimei span, .chosha span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.selectListAll {
+    width: 700px;
+    margin: auto;
+    border-bottom: #efefef 2px solid;  
+    padding: 30px;
+}
+.selectList {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.selectList .listTtl {
+    width: 600px;
+    text-align: left;
+    padding-right: 10px;
+}
+.selectList .listTtl p:nth-child(1) a {
+    color: #4285f4;
+    font-size: 16px;   
+}
+.selectList .listTtl p:nth-child(2) {
+    font-size: 15px;
+}
+.selectList .listTtl p:nth-child(3) {
+    font-size: 12px;
+}
+
+.btns, .ups{
+    display: flex;
+    width: 700px;
+    margin: 20px auto;
+}
+
+.updateForm {
+    width: 700px;
+    margin: auto;
+}
+.updateForm input{
+    display: block;
+    width: 700px;
+    margin: 5px auto;
+    height: 30px;
+    padding: 5px;  
+    border: #efefef 1px solid; 
+}
+
